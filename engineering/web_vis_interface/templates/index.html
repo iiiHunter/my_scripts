@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Result</title>
+</head>
+<body>
+    <img style="width:1000px" src="data:image/jpg;base64,{{ img_stream }}">
+    <br>
+    =================
+    <br>
+    {% for ss in s_list %}
+        {{ ss.index }}:    {{ ss.value }}
+    <br>
+        =================
+    <br>
+    {% endfor %}
+</body>
+</html>
